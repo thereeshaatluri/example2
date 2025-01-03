@@ -6,7 +6,7 @@ app = Flask(__name__)
 tasks = []
 task_id = 0
 
-@app.route('/tasks', methods=['GET'])
+@app.route('/tasks', methods=['GET'])                                                   
 def get_tasks():
     return jsonify(tasks)
 
